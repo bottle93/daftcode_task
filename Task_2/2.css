@@ -1,0 +1,51 @@
+.modal__container {
+    width: 0;
+    height: 0;
+}
+.modal__container.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal__window {
+    display: none;
+    width: 0;
+    height: 0;
+    background-color: rgb(255,255,255);
+    border-radius: 15px;
+
+}
+.modal__window.visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    cursor: default;
+}
+.modal__link {
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.button {
+    border: 0;
+    border-radius: 15px;
+    padding: 10px 30px;
+}
+.button--open {
+    background-color: rgb(34,139,34);
+    margin: 20px;
+}
+.button--close {
+    background-color: rgb(255,99,71);
+}
